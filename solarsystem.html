@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            height: 100vh;
+            background-color: black;
+
+        }
+        .sun{
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background-color: yellow;
+            position: absolute;
+        }
+        .planet{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: blue;
+            position: absolute;
+            animation: orbit 5s linear infinite;
+        }
+        @keyframes orbit {
+            0% {
+                transform:rotate(0deg) translateX(100px) rotate(0deg)
+            }
+
+            100% {
+                transfrom: rotate(360deg) translateX(100px) rotate(-360deg)
+            }
+            
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class = "sun"></div>
+    <div class = "planet"></div>
+    
+</body>
+</html>
